@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <h2>1st assignment's 1st question</h2>
+    </head>
+    <body>
+        <script>
+               var date= new Date();
+               day= date.getDay();
+               var weekdays=['Sunday','Monday','Tuesday'];
+               document.write("Today is : " +weekdays[day]);
+               document.write("<br/>"); 
+               var hour = date.getHours();
+               var minute = date.getMinutes();
+               var second = date.getSeconds();
+               var ampm = (hour >= 12)? " PM ":" AM ";
+               hour = (hour >= 12)? hour - 12: hour;
+               minute= minute<10? '0' + minute : minute;
+               document.write("Current Time : "+hour + ampm + " : " + minute + " : " +second);
+        </script>
+            </body>
+</html>
